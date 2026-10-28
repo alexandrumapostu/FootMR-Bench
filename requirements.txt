@@ -1,0 +1,12 @@
+# --- Core ---
+numpy
+Pillow
+opencv-python
+
+# --- Training / inference backbones (CLIP4Clip, X-CLIP, SigLIP, MetaCLIP) ---
+torch
+transformers
+peft
+
+# --- Pipeline only: downloading raw SoccerNet labels/videos ---
+SoccerNet

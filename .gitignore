@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# generated at run time, not part of the release
+cache/
+data/soccernet/
+data/processed/

@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use FootMR-Bench, please cite this work."
+title: "FootMR-Bench: A Novel Benchmark for Match-Level Football Moment Retrieval"
+authors:
+  - family-names: Apostu
+    given-names: Alexandru-Mihai
+    orcid: "https://orcid.org/0009-0003-9437-5937"
+  - family-names: Danciu
+    given-names: Valentin-Nicolae
+    orcid: "https://orcid.org/0009-0003-8075-6595"
+  - family-names: Ionescu
+    given-names: Radu Tudor
+    orcid: "https://orcid.org/0000-0002-9301-1950"
+repository-code: "https://github.com/alexandrumapostu/footmr-bench"
+license: MIT
+date-released: 2026
