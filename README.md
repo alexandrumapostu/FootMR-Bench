@@ -5,7 +5,7 @@ query and a full football match, rank that match's annotated events by relevance
 to the query. Unlike clip-level moment retrieval, every query is resolved against
 an entire 90-plus-minute match, which is what makes ordinal queries ("the first
 corner") and event-anchored queries ("the foul before the second goal") answerable
-at all — their answer depends on events outside any single clip.
+at all (their answer depends on events outside any single clip).
 
 Built on top of [SoccerNet](https://www.soccer-net.org/)'s action-spotting
 annotations: 48,938 queries over 500 matches, spanning 18 query categories
@@ -14,7 +14,7 @@ annotations: 48,938 queries over 500 matches, spanning 18 query categories
 query structure.
 
 This repository releases the full benchmark (events + queries, no NDA or
-gating required — it's annotation metadata, not redistributed video), the
+gating required: it's annotation metadata, not redistributed video), the
 pipeline that built it, and the training/evaluation/reranking code used in
 the paper.
 
@@ -47,8 +47,8 @@ recovers $\mathcal{R}(q)$.
  "template_id": "player_single", "relevant": ["e058"], "n_relevant": 1,
  "template_seen_in_train": true, "text_for_training": "Ander Herrera yellow card"}
 ```
-`relevant` is the exact set of `event_id`s that answer the query — use it as
-ground truth; `template_seen_in_train=false` marks the five held-out
+`relevant` is the exact set of `event_id`s that answer the query (use it as
+ground truth); `template_seen_in_train=false` marks the five held-out
 generalization categories. `text_for_training` is the (possibly paraphrased)
 query text actually used for training/eval; fall back to `text` if absent.
 
